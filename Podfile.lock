@@ -1,0 +1,13 @@
+PODS:
+  - AdColony (2.6.1)
+  - FBAudienceNetwork (4.11.0)
+
+DEPENDENCIES:
+  - AdColony (= 2.6.1)
+  - FBAudienceNetwork
+
+SPEC CHECKSUMS:
+  AdColony: a9859672fee49d9a81017d1fffa3133bf8538bd8
+  FBAudienceNetwork: b4c154b19fc85c621f93c06813a110d0d95cee5c
+
+COCOAPODS: 0.39.0
