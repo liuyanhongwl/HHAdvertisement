@@ -9,6 +9,8 @@
 #import "ViewController.h"
 #import "HHFBViewController.h"
 #import "HHAdColonyViewController.h"
+#import "HHPNViewController.h"
+#import "HHMobVistaViewController.h"
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -28,10 +30,11 @@
     self.tableView.dataSource = self;
     [self.view addSubview:self.tableView];
     
-    
     self.dataArray = @[
                        @"fb (native ad)",
-                       @"adcolony (video ad)"
+                       @"adcolony (video ad)",
+                       @"pubnative (native ad)",
+                       @"MobVista (native ad)" 
                        ];
 }
 
@@ -66,6 +69,20 @@
         case 1:
         {
             HHAdColonyViewController *vc = [[HHAdColonyViewController alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
+            
+        case 2:
+        {
+            HHPNViewController *vc = [[HHPNViewController alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
+            
+        case 3:
+        {
+            HHMobVistaViewController *vc = [[HHMobVistaViewController alloc] init];
             [self.navigationController pushViewController:vc animated:YES];
         }
             break;

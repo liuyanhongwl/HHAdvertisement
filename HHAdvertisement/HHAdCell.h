@@ -8,9 +8,12 @@
 
 #import <UIKit/UIKit.h>
 @class FBNativeAd;
+@class PNNativeAdModel;
 
 @interface HHAdCell : UITableViewCell
 
-@property (nonatomic, strong) FBNativeAd *ad;
+@property (nonatomic, strong) FBNativeAd *fbAd;
+
+@property (nonatomic, strong) PNNativeAdModel *pnAd;
 
 @end
